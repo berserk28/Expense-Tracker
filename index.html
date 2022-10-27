@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense tracker</title>
+</head>
+<body>
+    <h1>Expence tracker</h1>
+   <div class="container">
+    <!-- Balance -->
+    <h3>YOUR BALANCE</h3>
+    <p id="balance" class="balance">$0.00</p>
+
+    <!-- income & expense showcase -->
+    <div class="income_expance">
+        <div class="income-container">
+            <p>INCOME</p>
+            <p id="income">$0.00</p>
+        </div>
+        <div class="expense-container">
+            <p>EXPENSE</p>
+            <p id="expense">$0.00</p>
+        </div>
+    </div>
+
+    <!-- History showcase -->
+    <div class="history_container">
+        <h3>History</h3>
+        <ul id="history-list" class="history-list">
+        </ul>
+    </div>
+
+    <!-- new transaction showcase -->
+    <div class="new-transaction">
+        <h3>Add new transaction</h3>
+        <form>
+            <!-- text -->
+            <div>
+                <label class="text">Text</label>
+                <input type="text" class="text_input" id="text_input" placeholder="    Enter text ...">
+            </div>
+            <!-- amount -->
+            <div>
+                <label class="text">Amount<br>(negative - expense, positive - income)</label>
+                <input type="number" class="income_input" id="income_input">
+            </div>
+            <!-- btn add transaction -->
+            <button class="btn" id="btn"> Add transaction</button>
+ 
+        </form> 
+    </div>
+
+   </div>
+    <script src="app.js"></script>
+</body>
+</html>

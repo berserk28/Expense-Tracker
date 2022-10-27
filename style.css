@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@1,500&family=Roboto:wght@100&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+.container{
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* Styling the big title */
+h1{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* styling balance */
+h3{
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.balance{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styling the income and expense showcase */
+.income_expance{
+    display: flex;
+    background-color: white;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.income-container , .expense-container{
+    padding: 20px 15px;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    
+}
+.income-container{
+    border-right: 1px solid gray;
+}
+
+#income{
+    color: #2ecc71;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 200;
+    
+}
+
+#expense{
+    color: #c0392b;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/* styling the history container  & transaction container*/
+.history_container h3 , .new-transaction h3{
+    font-size: 19px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.new-transaction label{
+    display: block;
+    margin-bottom: 10px;
+}
+  
+
+.new-transaction input{
+    display:block;
+    width: 100%;
+    padding: 10px 0px;
+    border: 1px solid rgb(223, 216, 216);
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+/* styling the history list */
+.history-list{
+    list-style: none;
+}
+
+.list-item-income ,
+.list-item-expense{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.list-item-income{
+    border-right: 5px solid #2ecc71;
+}
+
+.list-item-expense{
+    border-right: 5px solid #c0392b;
+}
+
+/* styling the Delete btn */
+.delete-btn{
+    background-color: #c0392b;
+    border: none;
+    
+    padding: 2px 5px;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-110%,30%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.list-item-expense:hover .delete-btn,
+.list-item-income:hover .delete-btn{
+    opacity: 1;
+}
+
+
+/* styling the btn */
+
+.btn{
+    display: block;
+    width: 100%;
+    padding: 13px 0px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 20px 0px ;
+    background-color: #9c88ff;
+    color: white;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #7262c2;
+}
